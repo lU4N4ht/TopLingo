@@ -1,0 +1,90 @@
+        body {
+            height: 100vh;
+            background-color: #18181a;
+        }
+        
+        .barra {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 6vw;
+            height: 100vh;
+            background-color: #98CCE4;
+        }
+        
+        .second-area {
+            display: flex;
+            flex-direction: column;
+            padding-left: 60px;
+            justify-content: center;
+        }
+        
+        header {
+            padding-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-inline: 40px;
+            padding-left: 40em;
+        }
+        
+        h1 {
+            color: #98CCE4;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+        
+        main {
+            padding-top: 200px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        input {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            outline: 0;
+        }
+        
+        .input-info {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            align-items: center;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 5px;
+        }
+        
+         ::placeholder {
+            color: #fff;
+        }
+        
+        .area-input {
+            display: grid;
+            gap: 50px;
+        }
+        
+        footer {
+            padding-top: 300px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        
+        .area-input {
+            display: grid;
+            gap: 48px;
+        }
+        
+        .container-button {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .text-input {
+            display: grid;
+            gap: 30px;
+        }
