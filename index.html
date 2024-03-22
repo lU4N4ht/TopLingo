@@ -14,18 +14,17 @@
 </head>
 
 <body>
-    <section class="first-area">
-        <div class="barra"></div>
-    </section>
-    <section class="second-area">
+    <div class="barra"></div>
+    <div class="content">
         <header>
-            <h1>LinguaBridge</h1>
-
+            <div class="title-container">
+                <h1>LinguaBridge</h1>
+            </div>
             <div class="botao-container">
                 <div class="toggle-switch">
                     <label class="switch-label">
-                      <input type="checkbox" class="checkbox">
-                      <span class="slider"></span>
+                        <input type="checkbox" class="checkbox" id="mudarTema">
+                        <span class="slider"></span>
                     </label>
                 </div>
             </div>
@@ -35,53 +34,48 @@
                 <div class="wrapper">
                     <div class="text-input">
                         <div class="area-input">
-                            <div class="input-info">
+                            <div class="input-info" id="input">
                                 <input class="from-text" placeholder="Enter text">
-                                <select>
-                                </select>
+                                <select></select>
                             </div>
-
                         </div>
                         <div class="area-input">
-                            <div class="input-info">
+                            <div class="input-info" id="input2">
                                 <input class="to-text" placeholder="Translation" readonly disabled>
-                                <select>
-                                </select>
+                                <select></select>
                             </div>
-
                         </div>
-
-
                         <div class="container-button">
-                            <button>Translate</button>
+                            <button class="c-button c-button--gooey"> Traduzir
+                                <div class="c-button__blobs">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                </div>
+                              </button>
+                              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                                <defs>
+                                  <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                                    <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                                  </filter>
+                                </defs>
+                              </svg>
                         </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer>
             <p> ❤️🚀 Bianca e Luana 🚀❤️</p>
         </footer>
-    </section>
-    <!-- <div class="custom-select " id="selectFrom ">
-                                <div class="selected-value ">
-                                    <img src="https://flagcdn.com/w20/us.png " alt="Selected " />
-                                    <span>English</span>
-                                </div>
-                                <div class="options-container ">
-                                </div>
-                            </div> -->
-
-    <!-- </div>
-                            <div class="custom-select " id="selectFrom ">
-                                <div class="selected-value ">
-                                    <img src="https://flagcdn.com/w20/us.png " alt="Selected " />
-                                    <span>English</span>
-                                </div>
-                                <div class="options-container ">
-                                </div>
-                            </div> -->
+    </div>
 
 </body>
 <script src="./js/countries.js "></script>
 <script src="./js/script.js "></script>
 <script src="./js/flags.js "></script>
+<script src="./js/mudarTema.js "></script>
 
 </html>

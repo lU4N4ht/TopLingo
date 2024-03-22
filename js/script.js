@@ -11,9 +11,6 @@ selectTag.forEach((tag, id) => {
     }
 });
 
-
-
-
 fromText.addEventListener("keyup", () => {
     if(!fromText.value) {
         toText.value = "";
@@ -39,25 +36,5 @@ translateBtn.addEventListener("click", () => {
 });
 
 
-icons.forEach(icon => {
-    icon.addEventListener("click", ({target}) => {
-        if(!fromText.value || !toText.value) return;
-        if(target.classList.contains("fa-copy")) {
-            if(target.id == "from") {
-                navigator.clipboard.writeText(fromText.value);
-            } else {
-                navigator.clipboard.writeText(toText.value);
-            }
-        } else {
-            let utterance;
-            if(target.id == "from") {
-                utterance = new SpeechSynthesisUtterance(fromText.value);
-                utterance.lang = selectTag[0].value;
-            } else {
-                utterance = new SpeechSynthesisUtterance(toText.value);
-                utterance.lang = selectTag[1].value;
-            }
-            speechSynthesis.speak(utterance);
-        }
-    });
-});
+
+
