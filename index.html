@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -35,30 +35,36 @@
                     <div class="text-input">
                         <div class="area-input">
                             <div class="input-info" id="input">
-                                <input class="from-text" placeholder="Enter text">
+                                <button class="from">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/3311/3311718.png" alt="mic" width="20">
+                                </button>
+                                <input class=" from-text " placeholder="Enter text ">
                                 <select></select>
                             </div>
                         </div>
-                        <div class="area-input">
-                            <div class="input-info" id="input2">
-                                <input class="to-text" placeholder="Translation" readonly disabled>
+                        <div class="area-input ">
+                            <div class="input-info " id="input2 ">
+                                <button class="to">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/8191/8191686.png" alt="mic" width="20">
+                                </button>
+                                <input class="to-text " placeholder="Translation " readonly disabled>
                                 <select></select>
                             </div>
                         </div>
-                        <div class="container-button">
-                            <button class="c-button c-button--gooey"> Traduzir
-                                <div class="c-button__blobs">
+                        <div class="container-button ">
+                            <button class="c-button c-button--gooey "> Traduzir
+                                <div class="c-button__blobs ">
                                 <div></div>
                                 <div></div>
                                 <div></div>
                                 </div>
                               </button>
-                              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                            <svg xmlns="http://www.w3.org/2000/svg " version="1.1 " style="display: block; height: 0; width: 0; ">
                                 <defs>
-                                  <filter id="goo">
-                                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
-                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
-                                    <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                                  <filter id="goo ">
+                                    <feGaussianBlur in="SourceGraphic " stdDeviation="10 " result="blur "></feGaussianBlur>
+                                    <feColorMatrix in="blur " mode="matrix " values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 18 -7 " result="goo "></feColorMatrix>
+                                    <feBlend in="SourceGraphic " in2="goo "></feBlend>
                                   </filter>
                                 </defs>
                               </svg>
@@ -77,5 +83,6 @@
 <script src="./js/script.js "></script>
 <script src="./js/flags.js "></script>
 <script src="./js/mudarTema.js "></script>
+<script src="./js/voice.js "></script>
 
 </html>
