@@ -1,7 +1,8 @@
 const fromText = document.querySelector(".from-text"),
     toText = document.querySelector(".to-text"),
     selectTag = document.querySelectorAll("select"),
-    translateBtn = document.querySelector("button")
+    translateBtn = document.querySelector(".c-button--gooey"),
+    fromVoiceBtn = document.querySelector(".from");
 
 selectTag.forEach((tag, id) => {
     for (let country_code in countries) {
@@ -11,20 +12,22 @@ selectTag.forEach((tag, id) => {
     }
 });
 
-fromText.addEventListener("keyup", () => {
-    if (!fromText.value) {
-        toText.value = "";
-    }
+fromVoiceBtn.addEventListener('click', function() {
+    const recognition = new webkitSpeechRecognition();
+    recognition.lang = selectTag[0].value;
+    recognition.start();
+    recognition.onresult = function(event) {
+        fromText.value = event.results[0][0].transcript;
+    };
 });
 
-let toVoice = document.querySelector('.to')
-
+let toVoice = document.querySelector('.to');
 toVoice.addEventListener('click', function() {
-    let fromTalk;
-    fromTalk = new SpeechSynthesisUtterance(toText.value)
-    fromTalk.lang = selectTag[1].value;
-    speechSynthesis.speak(fromTalk)
-})
+    let toTalk;
+    toTalk = new SpeechSynthesisUtterance(toText.value)
+    toTalk.lang = selectTag[1].value;
+    speechSynthesis.speak(toTalk)
+});
 
 translateBtn.addEventListener("click", () => {
     let text = fromText.value.trim(),

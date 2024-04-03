@@ -100,3 +100,26 @@ footer {
 .border{
     border-bottom: 1px solid #18181a;
 }
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+}
+.botao{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #98CCE4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.botao:hover{
+    background-color: #4d9bce;
+}

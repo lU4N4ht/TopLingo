@@ -24,8 +24,8 @@ backgroundTheme.addEventListener('change', function() {
         document.body.style.backgroundColor = '#18181a'; 
         document.querySelector('.barra').style.backgroundColor = '#98CCE4'; 
         document.querySelector('h1').style.color = '#98CCE4';
-        inputInfo.classList.remove('border') 
-        inputInfo2.classList.remove('border') 
+        inputInfo.classList.remove('border'); 
+        inputInfo2.classList.remove('border'); 
         document.querySelector('.from-text').style.color = '#FFFFFF'; 
         document.querySelector('.to-text').style.color = '#FFFFFF'; 
         document.querySelector('p').style.color = '#FFFFFF'; 
