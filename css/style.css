@@ -123,3 +123,7 @@ select {
 .botao:hover{
     background-color: #4d9bce;
 }
+
+.alice-background{
+    background-color: #fff;
+}
